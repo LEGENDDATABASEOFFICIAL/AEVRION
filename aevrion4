@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+if [ "$1" = "-r" ]; then
+    python3 "$DIR/aevrion.py" -r
+else
+    python3 "$DIR/aevrion.py" "$@"
+fi
